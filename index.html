@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 1</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .block-iphone{
+            margin-top: 100px;
+            width: 300px;
+            position: relative;
+        }
+        .bg-iphone{
+            width: 165px;
+            height: 357px;
+            background-color: rgb(20, 121, 0);
+            position: absolute;
+            top: 10px;
+            left: 43px;
+            border-radius: 17px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .bg-iphone h2{
+            color: rgb(255, 255, 255);
+            font-size: 60px;
+            font-weight: 100;
+            z-index: 3;
+        }
+        .bg-iphone p{
+            color: rgb(255, 255, 255);
+            z-index: 2;
+        }
+        .bg-iphone-anim{
+            width: 165px;
+            height: 0px;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .iphone{
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="block-iphone">
+        <div class="bg-iphone">
+            <div class="bg-iphone-anim"></div>
+            <h2>2</h2>
+            <p>minute</p>
+        </div>
+        <img src="Phone-in-Hand-Download-Free-PNG-Clip-Art.png" alt="" class="iphone">
+    </div>
+    
+
+    <script src="jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
